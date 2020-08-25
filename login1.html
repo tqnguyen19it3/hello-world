@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="Css/stylelogin1.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="Css/color.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href ="https://unpkg.com/aos@next/dist/aos.css"/>  <!--ANIMATION ON SCROLL-->
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <img class="wave" src="img/background01.jpg">
+  <div class="back-to-menu">
+   <a href="index.html">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      <p>về Trang Chủ</p>
+   </a>
+  </div>
+	<div class="container">
+		<div class="img" data-aos="fade-up-right" data-aos-delay="0" data-aos-duration="1500">
+			<img src="img/image1-02.png">
+		</div>
+		<div class="login-content" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1500">
+			<form>
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+        <p id="text">WARNING! Caps lock is ON.</p>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fa fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Tài Khoản</h5>
+           		   		<input id="myInput" type="text" class="input" required="" name="userName">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fa fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Mật Khẩu</h5>
+           		    	<input id="myInput1" type="password" class="input" required="" name="password">
+            	   </div>
+            	</div>
+            	<a href="register.html" class="rgt">Tạo Tài Khoản!</a>
+            	<p class="text-black text-left" style="margin-top: -20px;"><input type="checkbox" name="">  Lưu Mật Khẩu</p>
+              <ul class="social-agileinfo" style="padding-top: 0px;">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            	<a href="index.html">
+            		<button class="tg-btn" type="submit" formaction="index.html" onclick="myFunction()" data-toggle="tooltip" title="Click!"><span>Đăng Nhập</span></button>
+            	</a>
+              <a href="index.html" class="rgt"><p class="rgt text-left rgt-thong-tin" style="color: orange; font-size: 1.0rem; padding-top: 10px;">© 2020 Website NV Sprorts Football</p></a>
+            </form>
+        </div>
+    </div>
+    <script>
+  		$(document).ready(function(){
+  		  $('[data-toggle="tooltip"]').tooltip({placement: "right"});   
+  		});
+    </script>
+	<script>
+		function myFunction() {
+
+		  alert("Đăng nhập thành công! Chào mừng bạn đến với website của chúng tôi");
+
+     
+		}
+	</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript" src="js/mainlogin1.js"></script>
+  <script>
+    var input = document.getElementById("myInput");
+    var input1 = document.getElementById("myInput1");
+    var text = document.getElementById("text");
+    input.addEventListener("keyup", function(event) {
+
+    if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none"
+      }
+    });
+    input1.addEventListener("keyup", function(event) {
+
+    if (event.getModifierState("CapsLock")) {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none"
+      }
+    });
+  </script>
+</body>
+</html>
