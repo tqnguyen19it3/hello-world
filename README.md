@@ -1,3 +1,3 @@
 # hello-world
-test github
-Rum ddepj try
+Rum dep trai
+so 1 tg
